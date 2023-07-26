@@ -1,0 +1,6 @@
+https://www.headspin.io/blog/regression-testing-a-complete-guide
+https://testsigma.com/tools/regression-testing-tools/
+https://books.google.es/books?hl=es&lr=&id=YDgoDAAAQBAJ&oi=fnd&pg=PP1&dq=Regression+Testing:+Concepts,+Methods,+and+Applications&ots=8hNVzTdExB&sig=VeJCb7vyEmG3oKOzKwQ7OxVOsGU#v=onepage&q&f=false
+https://books.google.com.ec/books?hl=en&lr=&id=kl2H0G6EFf0C&oi=fnd&pg=PR5&dq=Automated+Regression+Testing+Techniques:+An+Overview&ots=wQ-MuYlEqY&sig=iYDW1u7ilCg94IXLS2eMMfRLR9g&redir_esc=y#v=onepage&q=Automated%20Regression%20Testing%20Techniques%3A%20An%20Overview&f=false
+https://dl.acm.org/doi/abs/10.1145/2492248.2492272
+sciencedirect.com/science/article/abs/pii/S0950584922001070?via%3Dihub
