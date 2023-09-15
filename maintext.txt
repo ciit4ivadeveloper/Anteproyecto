@@ -1,0 +1,211 @@
+\documentclass{article}
+
+%Librerías
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\setlength{\textwidth}{18cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength{\headsep}{-1cm}
+\setlength{\voffset}{0cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headheight}{0cm}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows}
+\usepackage{multicol}
+\usepackage{lipsum} 
+%\bibliographystyle{apacite}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+
+
+\begin{document}
+
+%%%%%% ENCABEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Logo de la maestría
+\colorbox{white!10!}{
+    \begin{minipage}[t]{0.05\textwidth} %0.165 
+       \begin{flushright}
+        \includegraphics[width=2in]{logo UPS.png}
+       \end{flushright}
+    \end{minipage}
+    \begin{minipage}[H]{0.62 \textwidth} %0.62
+        \begin{center}
+         
+        \end{center}
+     \end{minipage}
+    \begin{minipage}[t]{0.05 \textwidth}
+        \begin{flushleft}
+        \hspace{10.25cm}
+            \includegraphics[width=2in]{Posgrados.png}
+        \end{flushleft}
+    \end{minipage}
+}
+
+\begin{tikzpicture}
+    \draw[thick] (-6.5,0)--(11.2,0);
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.1cm}
+\begin{center}
+{\large\textsc{ANTEPROYECTO DEL TRABAJO DE TITULACIÓN}} \\
+\vspace{0.5cm}
+{ \large \textbf{Santiago David Cordero Crespo}} \\ 
+\vspace{0.25cm}
+{ \large \textbf{Cristian Ivan Idrovo Tapia}}
+\end{center}
+\vspace{0.1cm}
+
+\section{Tema del Trabajo de Titulación:  }
+\begin{center}
+Análisis Comparativo de Selenium y Appium para Pruebas de Regresión en la Aplicación Móvil 'JAMOVIL' de la COAC Jardín Azuayo: Calidad, Eficiencia, Cobertura y Integración Continua CI/CD
+\end{center}
+\section{Docente tutor propuesto:   }
+\begin{center}
+PhD. Gonzalo Pérez
+\end{center}
+\section{Antecedentes:}
+Las pruebas de regresión se remontan a los primeros días del desarrollo de software. Estas pruebas se han vuelto fundamentales con la constante evolución que los sistemas sufren para adaptarse a los  cambios buscando garantizar que  la aplicación no introduzcan nuevos errores o provoquen la regresión de características previamente funcionales.\cite{gutierrez2022implementacion}
+
+En el desarrollo de software tradicional las pruebas se realizaban de forma manual, los equipos de desarrollo realizaban pruebas exhaustivas después de cada cambio en el código, lo que consumía mucho tiempo y recursos. A medida que las aplicaciones crecían en complejidad, se volvió evidente la necesidad de encontrar formas más eficientes de garantizar la calidad del software. \cite{maida2015metodologias}
+
+Con la automatización de pruebas surgieron herramientas y frameworks que ayudaban a realizar esta tarea, esto ha permitido a los grupos de desarrollo ejecutar pruebas repetitivas de manera efectiva y rápida. Sin embargo, aún era necesario definir cuáles pruebas debían ejecutarse después de cada cambio en el código.
+
+La adopción de metodologías ágiles como Scrum y DevOps llevó a una mayor velocidad de desarrollo. Los equipos comenzaron a implementar cambios de código con mayor frecuencia, lo que aumentó la necesidad de garantizar la estabilidad y la calidad del software a lo largo del tiempo. \cite{trigas2012metodologia} 
+
+Esto dio paso a la necesidad de pruebas automatizadas de regresión. Estas pruebas se diseñaron para verificar que las funcionalidades existentes no se vieran afectadas por nuevos cambios en el código. 
+El término "pruebas de regresión" se popularizó y se convirtió en una parte esencial de los flujos de trabajo de desarrollo.
+
+Con el pasar del tiempo, se han desarrollado herramientas específicas para la automatización de pruebas de regresión, como Selenium, Appium y otras. Estas herramientas han permitido a los equipos automatizar pruebas de interfaz de usuario, pruebas funcionales y más. También han surgido  metodologías y prácticas para gestionar y ejecutar pruebas de regresión de manera efectiva, como la integración continua (CI)/(CD)
+
+La expansión constante de las tecnologías móviles ha dado lugar a una creciente dependencia de las aplicaciones móviles en varios aspectos de nuestras vidas, incluyendo las operaciones bancarias y financieras. Por consiguiente las aplicaciones móviles desempeñan un papel crucial para las instituciones financieras, permitiendo la interacción positiva y segura con los clientes. Una de estas instituciones es la COAC Jardín Azuayo, cuya aplicación móvil "JAMOVIL" brinda una experiencia de usuario fluida.
+
+A medida que las opciones de negocio cambian o se incrementan, las aplicaciones evolucionan y se actualizan para brindar nuevas opciones y mejoras,  en consecuencia aumenta la complejidad de su desarrollo y mantenimiento. La introducción de cambios en una aplicación móvil puede conllevar a la aparición de errores no deseados, lo que pone en riesgo la confiabilidad y la experiencia del usuario. 
+
+Por tanto para garantizar que la aplicación "JAMOVIL" cumpla con altos estándares de calidad, es necesario contar con un proceso de pruebas sólido que se enfoque en aspectos clave como la calidad del software, evaluación de cumplimiento de requisitos. Además, se debe lograr una amplia cobertura de pruebas para asegurar que todas las partes de la aplicación estén probadas exhaustivamente. Finalmente, la integración continua (CI) y la entrega continua (CD) son esenciales para asegurar que las pruebas se realicen de manera automática y constante en todo el ciclo de desarrollo. 
+
+En este contexto, la automatización de pruebas de regresión ha emergido como un enfoque crucial para mantener la integridad funcional de las aplicaciones móviles en evolución. Asi pues las herramientas de automatización de pruebas, como Selenium y Appium, se han convertido en opciones populares para este propósito, permitiendo a los equipos de desarrollo y pruebas garantizar la estabilidad de la aplicación a lo largo del tiempo y a través de diferentes dispositivos y sistemas operativos.
+
+Este análisis comparativo permitirá identificar cuál es la herramientas más adecuada para abordar los desafíos específicos de la aplicación, considerando aspectos clave como calidad, eficiencia, cobertura y integración continua CI/CD.  Además, se espera que los resultados de este análisis no solo beneficien a la cooperativa en cuestión, sino que también contribuyan al conocimiento en el campo de las pruebas de regresión en el ámbito de las aplicaciones móviles financieras, estableciendo mejores prácticas y orientación para futuros desarrollos.
+
+Entre las principales investigaciones y estudios que aportarán a los analisis de las herramientas estan "la implementacion de una plataforma de automatización de procesos usando “Selenium Web Driver” para optimizar las pruebas de regresión" \cite{gutierrez2022implementacion}, Tambien esta  \cite{garg2016appium}, que indica el funcionamiento de Appium en pruebas de testeo movil. Por otro lado esta “el analisis de la funcionalidad de las pruebas de Regresión mediante el Uso de Patrones de Diseño". \cite{leticiapruebas}
+   
+\section{Justificación:}   
+El presente análisis comparativo se centra en evaluar y seleccionar entre las herramientas de automatización de pruebas, Selenium y Appium, cuál de ellas es la más adecuada en términos de garantizar la calidad, eficiencia e integración continua en las pruebas de regresión de aplicaciones móviles. La elección de la herramienta apropiada es esencial para la COAC Jardin Azuayo ya que le generará una ventaja competitiva al ofrecer productos moviles financieros de alta calidad de manera mas eficiente, destacando en el mercado competitivo, de lado  tecnologico permitirá agilizar la entrega de nuevas versiones, lo que a su vez mejorá la eficiencia del equipo de desarrollo y optimizará los tiempos dedicados a las pruebas de calidad de software y experiencia de usuario.
+\section{Objetivos:}
+\subsection*{Objetivo General:}
+ Comparar y Evaluar la calidad , eficiencia, cobertura e Integración Continua CI/CD al realizar pruebas de regresión en la aplicación móvil financiera "JAMOVIL", utilizando las herramientas de automatización Selenium y Appium, para obtimizar el proceso de pruebas mejorando la calidad del software
+\subsection*{Objetivos Específicos:}
+
+\begin{itemize}
+    \item Llevar a cabo un análisis completo de la literatura científica y técnica relacionada con pruebas de regresión
+    en aplicaciones móviles financieras, enfocándose en estudios, investigaciones determinar cuál de las dos herramientas puede brindar resultados de pruebas más rápidos y exhaustivos para mejorar la calidad de Software.
+    \item Definir el conjunto de requerimientos y criterios de evaluación utilizando herramientas Selenium y Appium en las pruebas de regresión de la aplicación móvil financiera "JAMOVIL" para evaluar y comparar la eficiencia, calidad, cobertura de casos de prueba e integración Continua CI/CD.
+    \item  Definir la automatización de pruebas con Selenium y Appium, asegurando la configuración adecuada en el ambiente de pruebas y dispositivos móviles, para recolectar información que será utilizada en el proceso de análisis y resultados. 
+    \item  Medir y comparar las pruebas de regresión obtenida con Selenium y Appium, considerando el número de casos de prueba ejecutados y la profundidad de la cobertura en diferentes escenarios de prueba, para determinar cual de las dos herramientas ofrece una mayor cobertura de pruebas.
+    \item  Identificar fortalezas y debilidades de cada herramienta de automatización Selenium y Appium, considerando factores como la complejidad de la implementación, la facilidad de mantenimiento y la escalabilidad, para tomar las decision sobre cual herramienta es la mas adecuada para realizar el proceso de pruebas en la JAMOVIL
+    \item Evaluar la calidad de las pruebas de regresión realizadas con Selenium y Appium en la aplicación móvil 'JAMOVIL', mediante la medición de métricas de calidad de código, tasa de defectos detectados y tiempo de ejecución, 
+    con el propósito de reconocer las ventajas y desventajas de cada herramienta en relación con su calidad.
+\end{itemize}
+
+\section{Alcance:}
+\begin{itemize}
+    \item Presentar una descripción detallada de la COAC Jardín Azuayo y su aplicación móvil 'JAMOVIL'.
+    \item Explicar la importancia de las pruebas de regresión en el contexto de esta aplicación y la necesidad de automatizarlas.
+    \item Identificar los requisitos técnicos y de hardware necesarios para la ejecución de pruebas con Selenium y Appium.
+    \item Definir casos de prueba de regresión específicos para la aplicación móvil 'JAMOVIL'.
+    \item Definir estándares de aceptación y parámetros de medición para valorar la calidad de las pruebas.
+    \item Desarrollar scripts de prueba utilizando Selenium y Appium para automatizar los casos de prueba definidos.
+    \item Configurar los ambientes de prueba y preparar datos de prueba.
+    \item Ejecutar las pruebas de regresión en la aplicación móvil 'JAMOVIL' utilizando ambas herramientas.
+    \item Registrar métricas relacionadas con la calidad, eficiencia y cobertura de las pruebas en cada herramienta.
+    \item Comparar los resultados y determinar las ventajas y desventajas de Selenium y Appium en términos de pruebas de regresión.
+    \item Evaluar las posibilidades de integración de las pruebas automatizadas en un flujo de Integración Continua (CI) o Entrega Continua (CD) para mantener la calidad del software.
+    \item Identificar herramientas y servicios que puedan facilitar la integración continua de las pruebas.
+\end{itemize}
+
+\section{Metodología:}
+
+La metodología elegida  es la iterativa incremental para llevar a cabo el análisis consiste en la realización de escenarios de pruebas con el fin de obtener métricas claras de cada una de las herramientas Selenium y Appium, para determinar las ventajas y desventajas de integrarlo en el proceso de cambio continuo de la aplicación móvil JA”MOVIL”.
+A continuación, se detallan y enumeran las actividades a realizar:
+
+\subsection{Revisión y Actualización del conocimiento existente} 
+Para el desarrollo de este análisis, es necesario comprender la importancia del proceso de calidad tanto técnico como funcional en el ciclo de vida del desarrollo continuo de software. Para  lograr una comprensión mas extensa se presenta un definición del concepto de calidad de software y pruebas de regresión en la validación de cambios funcionales.
+ 
+
+\subsubsection{Calidad de software}
+
+La calidad en el contexto de un producto de desarrollo de software continuo ha sido abordada por diversas entidades. La norma ISO/IEC 25000, establece: “La calidad de un producto de software se puede entender como el nivel en que dicho producto cumple con los requisitos de sus usuarios, proporcionando un valor agregado. Estos requisitos, que incluyen funcionalidad, rendimiento, seguridad, sostenibilidad, entre otros, están representados en un modelo de calidad que categoriza la calidad del producto en características" \cite{cortes2020automatizacion}  
+
+La calidad de software ayuda a mantener un control de estándares de desarrollos documentados que permiten realizar cambios siguiendo un patrón de desarrollo que ayuda a minimizar la probabilidad de errores no detectados a nivel técnico que afecten a la funcionalidad del aplicativo.
+
+\subsubsection{Pruebas de Regresión}
+
+En aplicativos que sufren constantemente cambios  se vuelve impresindible implementar pruebas de regresion. Estas pruebas implican volver a evaluar las funcionalidades que previamente estaban validados satisfactoriamente. 
+Estas pruebas incluyen la reutilizacion de algunos casos de prueba existentes con el objetivo de garantizar que las modificaciones realizadas en el software del aplicativo no hayan interferido con su correcto funcionamiento ni hayan ocasionado efectos secundarios no esperados. Este tipo de pruebas se vuelven especialmente frecuentes durante la fase de mantenimiento de un aplicativo. \cite{alonso2007pruebas} 
+
+
+
+En los últimos 10 años, la Cooperativa Jardín Azuayo ha ampliado sus servicios a través de canales virtuales. Uno de los servicios destacados en su cartera es Ja Móvil. Durante su desarrollo, el equipo de desarrollo ha adoptado la práctica de realizar casos de prueba cada vez que se introduce alguna modificación.
+
+Cada vez que se realizan cambios en Ja Móvil, se lleva a cabo un conjunto de pruebas exhaustivas para garantizar la continuidad del servicio. Estas pruebas han abarcado áreas críticas como el registro de usuarios, el cambio de claves, la consulta de saldos, las transferencias y los pagos a recaudadoras.
+¨
+\section{Cronograma de actividades:}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{cronograma.png}
+  \caption{Cronograma de Actividades Macro}
+  \label{fig:mi_imagen}
+\end{figure}
+
+
+\section{Presupuesto: (Opcional)}
+
+ \begin{itemize}
+    \item Recursos Humanos:
+
+    \begin{itemize}
+          \item Estudiantes de la maestria: 0 USD 
+    \end{itemize}
+    \item Tecnología y Herramientas:
+
+    \begin{itemize}
+          \item Licencias de Selenium y Appium: 0 USD (Codigo Abierto GPL).
+          \item Dispositivos Móviles / Emuladores: 400 USD
+
+          \item Servidores de Prueba y Hosting: 0 USD (Utilizar infraestructura de la COAC Jardin Azuayo)
+    \end{itemize}
+
+    \item Gastos Varios:
+
+    \begin{itemize}
+          \item Materiales de Investigación y Escritura: 100 USD
+    \end{itemize}
+
+    \item Total Estimado del Presupuesto:
+
+    \begin{itemize}
+          \item Total: 500
+    \end{itemize}
+
+
+    \item Distribución del Presupuesto:
+
+    \begin{itemize}
+          \item Investigación y Análisis: 10\%
+          \item Desarrollo y Ejecución: 80\%
+          \item Otros: 10\%
+    \end{itemize}
+ 
+\end{itemize}
+
+
+\bibliographystyle{apalike}
+%apacite
+
+
+\bibliography{sample}
+
+\vspace{1cm}
+
+\end{document}
+
